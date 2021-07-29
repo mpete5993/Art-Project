@@ -862,6 +862,8 @@ a.icon {
 
 #single-post .blog-comment .media img {
   padding-right: 14px;
+  height: 70px;
+    width: 80px;
 }
 
 #single-post .blog-comment h4 {

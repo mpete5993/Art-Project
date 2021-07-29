@@ -89,7 +89,7 @@ http://www.tooplate.com/view/2082-pure-mix
             </div>
             <div class="row">
               <div class="brand">
-                <a href="index.html">Pure Mix</a>
+                <a href=" {{url('/') }}">Pure Mix</a>
               </div>
               <div class="navicon">
                 <div class="menu-container">
