@@ -16,7 +16,8 @@
         "laravel/tinker": "^2.5",
         "laravel/ui": "^3.3",
         "tcg/voyager": "^1.4",
-        "fakerphp/faker": "^1.9.1"
+        "fakerphp/faker": "^1.9.1",
+        "ext-gd": "*"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
