@@ -28,7 +28,7 @@
        @foreach ($posts as $post)
             <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="2.2s">
                <div class="blog-thumb">
-                  <a href=" {{route('blog.post', $post->slug)}} "><img src=" {{asset('storage/'.$post->image)}} " class="img-responsive" alt="Blog"></a>
+                  <a href=" {{route('blog.post', $post->slug)}} "><img src=" {{secure_asset('storage/'.$post->image)}} " class="img-responsive" alt="Blog"></a>
                   <a href=""><h1 style="font-size: 13px"> {{$post->title}} </h1></a>
                      <div class="post-format"  style="font-size: 11px">
                      <span>By <a href="{{route('blog.post', $post->slug)}}">Admin</a></span>

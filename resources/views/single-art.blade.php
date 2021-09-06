@@ -42,7 +42,7 @@
 
 		<div class="wow fadeInUp col-md-7 col-sm-7" data-wow-delay="2.6s">
 			{!! $project->description !!} 
-			<img src="{{asset('storage/'.$project->image )}} " class="img-responsive" alt="Single Project">
+			<img src="{{secure_asset('storage/'.$project->image )}} " class="img-responsive" alt="Single Project">
 		</div>
 
       </div>

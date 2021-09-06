@@ -37,7 +37,7 @@
                               @foreach ($projects as $art)
                                     <div class="iso-box photoshop branding col-md-4 col-sm-6">
                                        <div class="portfolio-thumb">
-                                          <img src=" {{ asset('storage/'.$art->image)}} " class="img-responsive" alt="Portfolio">
+                                          <img src=" {{ secure_asset('storage/'.$art->image)}} " class="img-responsive" alt="Portfolio">
                                              <div class="portfolio-overlay">
                                                 <div class="portfolio-item">
                                                       <a href="{{ route('art.show', $art->slug) }}"><i class="fa fa-link"></i></a>
