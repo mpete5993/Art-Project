@@ -31,7 +31,7 @@
 						        <span><i class="fa fa-date"></i> {{$post->created_at->diffForHumans()}}</span>
                  </div>
                  {!! $post->body !!}
-               <img src=" {{secure_asset('storage/'.$post->image)}} " class="img-responsive post-image" alt="Blog">
+               <img src=" {{asset('storage/'.$post->image)}} " class="img-responsive post-image" alt="Blog">
                
                
 
@@ -40,7 +40,7 @@
                     @foreach ($post->comments as $comment)
                     <div class="media">
                       <div class="media-object pull-left">
-                          <img src=" {{secure_asset('storage/'.$comment->user->avatar)}} " class="img-responsive" alt="blog">
+                          <img src=" {{asset('storage/'.$comment->user->avatar)}} " class="img-responsive" alt="blog">
                      </div>
                     <div class="media-body">
                       <h4 class="media-heading">{{$comment->user->name}}</h4>
