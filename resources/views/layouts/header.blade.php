@@ -19,18 +19,18 @@ http://www.tooplate.com/view/2082-pure-mix
 	<title>Stargazing Graphics</title>
 	<!-- Bootstrap CSS
    ================================================== -->
-	<link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}} ">
+	<link rel="stylesheet" href="{{secure_asset('css/bootstrap.min.css')}} ">
 	<!-- Animate CSS
    ================================================== -->
-	<link rel="stylesheet" href="{{ asset('css/animate.min.css')}} ">
+	<link rel="stylesheet" href="{{ secure_asset('css/animate.min.css')}} ">
 	<!-- Font Icons CSS
    ================================================== -->
-	<link rel="stylesheet" href="{{ asset('css/font-awesome.min.css')}}">
-	<link rel="stylesheet" href="{{ asset('css/ionicons.min.css')}}">
+	<link rel="stylesheet" href="{{ secure_asset('css/font-awesome.min.css')}}">
+	<link rel="stylesheet" href="{{ secure_asset('css/ionicons.min.css')}}">
 
 	<!-- Main CSS
    ================================================== -->
-	<link rel="stylesheet" href=" {{asset('css/style.css')}} ">
+	<link rel="stylesheet" href=" {{secure_asset('css/style.css')}} ">
 
 	<!-- Google web font 
    ================================================== -->	
