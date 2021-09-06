@@ -16,7 +16,7 @@ http://www.tooplate.com/view/2082-pure-mix
 
 	<!-- Site title
    ================================================== -->
-	<title>Pure Mix</title>
+	<title>Stargazing Graphics</title>
 	<!-- Bootstrap CSS
    ================================================== -->
 	<link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}} ">
@@ -89,7 +89,7 @@ http://www.tooplate.com/view/2082-pure-mix
             </div>
             <div class="row">
               <div class="brand">
-                <a href=" {{url('/') }}">Pure Mix</a>
+                <a href=" {{url('/') }}">Stargazing</a>
               </div>
               <div class="navicon">
                 <div class="menu-container">

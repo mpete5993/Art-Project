@@ -22,7 +22,7 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
-Route::get('/art',[App\Http\Controllers\BlogController::class, 'index'])->name('art');
+Route::get('/art',[App\Http\Controllers\ArtController::class, 'index'])->name('art');
 Route::get('/art/{project}',[App\Http\Controllers\ArtController::class, 'show'])->name('art.show');
 
 
@@ -38,6 +38,9 @@ Route::get('/post', function () {
     return view('post');
 });
 
+/*==== email =======*/
+Route::get('/send-mail',  [App\Http\Controllers\sendEmailController::class, 'index'])->name('email');
+Route::post('/sendemail/send', [App\Http\Controllers\sendEmailController::class, 'store'])->name('sendEmail');
 
 Auth::routes();
 

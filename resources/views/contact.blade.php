@@ -10,7 +10,7 @@
 			<div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8">
             	<div class="header-thumb">
               		 <h1 class="wow fadeIn" data-wow-delay="0.6s">Contact Us</h1>
-              		 <h3 class="wow fadeInUp" data-wow-delay="0.9s">Vestibulum at aliquam lorem</h3>
+              		 <h3 class="wow fadeInUp" data-wow-delay="0.9s"></h3>
            		</div>
 			</div>
 
@@ -34,10 +34,25 @@
 		<div class="wow fadeInUp col-md-6 col-sm-12" data-wow-delay="1.6s">
 			<h1>Let's work together!</h1>
 			<div class="contact-form">
-				<form id="contact-form" method="post" action="#">
-					<input name="name" type="text" class="form-control" placeholder="Your Name" required>
-					<input name="email" type="email" class="form-control" placeholder="Your Email" required>
-					<textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea>
+				@if (count($errors) > 0)
+					<div class="alert alert-danger">
+						<ul>
+							@foreach ($errors->all() as $error)
+							<li> {{ $error }} </li>
+							@endforeach
+						</ul>
+					</div>
+				@endif
+				@if ($message = Session::get('success'))
+					<div class="alert alert-success">
+						{{$message}}
+					</div>
+				@endif
+				<form id="contact-form" method="post" action= {{ url('sendemail/send') }} "">
+					@csrf
+					<input name="name" type="text" class="form-control" placeholder="Your Name" >
+					<input name="email" type="email" class="form-control" placeholder="Your Email" >
+					<textarea name="message" class="form-control" placeholder="Message" rows="4" ></textarea>
 					<div class="contact-submit">
 						<input type="submit" class="form-control submit" value="Send a message">
 					</div>

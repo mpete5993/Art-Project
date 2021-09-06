@@ -11,7 +11,7 @@ class ArtController extends Controller
     {
         
         return view('art')->with([
-            'projects' => Art::inRandomOrder()->take(6)->get()
+            'projects' => Art::paginate(4)
         ]);
     }
 

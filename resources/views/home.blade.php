@@ -8,8 +8,8 @@
 
 			<div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8">
           <div class="header-thumb">
-              <h1 class="wow fadeIn" data-wow-delay="1.6s">Lorem ipsum dolor</h1>
-              <h3 class="wow fadeInUp" data-wow-delay="1.9s">Six HTML pages included</h3>
+              <h1 class="wow fadeIn" data-wow-delay="1.6s">Stargazing Graphics</h1>
+              <h3 class="wow fadeInUp" data-wow-delay="1.9s"></h3>
           </div>
 			</div>
 
@@ -38,7 +38,7 @@
                                     <img src=" {{asset('storage/'.$project->image)}} " class="img-responsive" alt="Portfolio">
                                        <div class="portfolio-overlay">
                                           <div class="portfolio-item">
-                                                <a href="single-project.html"><i class="fa fa-link"></i></a>
+                                                <a href="{{ route('art.show', $project->slug) }}"><i class="fa fa-link"></i></a>
                                                 <h2> {{$project->title}} </h2>
                                              </div>
                                        </div>

@@ -10,7 +10,7 @@
 			<div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8">
            		 <div class="header-thumb">
               		 <h1 class="wow fadeIn" data-wow-delay="1.6s"> {{$project->title}} </h1>
-              		 <h3 class="wow fadeInUp" data-wow-delay="1.9s">Nulla scelerisque lectus urna</h3>
+              		 <h3 class="wow fadeInUp" data-wow-delay="1.9s"></h3>
            		 </div>
 			</div>
 
@@ -35,8 +35,8 @@
 				<hp> {{$project->created_at->diffForHumans()}} </p>
 			</div>
 			<div class="project-info">
-				<h4>Category</h4>
-				<p></p>
+				{{-- <h4>Category</h4>
+				<p></p> --}}
 			</div>
 		</div>
 

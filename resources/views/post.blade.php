@@ -9,7 +9,7 @@
 			<div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8">
           <div class="header-thumb">
               <h1 class="wow fadeIn" data-wow-delay="0.6s"> {{$post->title}} </h1>
-              <h3 class="wow fadeInUp" data-wow-delay="0.9s">Vestibulum at aliquam lorem</h3>
+              <h3 class="wow fadeInUp" data-wow-delay="0.9s"></h3>
           </div>
 			</div>
 
@@ -55,16 +55,25 @@
 
                <div class="blog-comment-form">
                   <h3>Leave a comment</h3>
-                    <form action=" {{ route('comments.store', $post->id) }} " method="post">
+                  @guest
 
-                      @csrf
-                      {{-- <input type="text" class="form-control" placeholder="Name" name="name" required>
-                      <input type="email" class="form-control" placeholder="Email" name="email" required> --}}
-                      <textarea class="form-control" placeholder="Comment" rows="5" name="comment" required id="comment"></textarea>
-                      <div class="contact-submit">
-                      	<input name="submit" type="submit" class="form-control" id="submit" value="Submit a comment">
-                      </div>
-                   </form>
+                  <div class="">
+                    <a href=" {{route('login')}} ">Login to comment</a>
+                  </div>
+                  @else
+                    <div class="">
+                      <form action=" {{ route('comments.store', $post->id) }} " method="post">
+
+                        @csrf
+                        {{-- <input type="text" class="form-control" placeholder="Name" name="name" required>
+                        <input type="email" class="form-control" placeholder="Email" name="email" required> --}}
+                        <textarea class="form-control" placeholder="Comment" rows="5" name="comment" required id="comment"></textarea>
+                        <div class="contact-submit">
+                          <input name="submit" type="submit" class="form-control" id="submit" value="Submit a comment">
+                        </div>
+                     </form>
+                    </div>
+                    @endguest
                </div>
          	  </div>
 		    </div>

@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Art extends Model
 {
     use HasFactory;
+
+    public function category() 
+    {
+        return $this->belongsTo('App\Models\Category');
+    }
 }
